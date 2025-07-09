@@ -4,7 +4,7 @@ import Spinner from "../components/Spinner";
 import { GET_COUNTRY } from "../Graphql/queries";
 import ErrorMessage from "../components/ErrorMessage";
 
-// Descripción: Página que muestra información detallada de un país específico
+// Description: Page that displays detailed information about a specific country
 const CountryPage = () => {
   const { code } = useParams();
   const { data, loading, error } = useQuery(GET_COUNTRY, {

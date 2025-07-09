@@ -8,7 +8,7 @@ import ErrorMessage from "../components/ErrorMessage";
 import type { ICountryProps } from "../types/types";
 import { GET_COUNTRIES } from "../Graphql/queries";
 
-// Descripción: Página principal que muestra una lista de países con filtros de búsqueda
+// Description: Main page that displays a list of countries with search and filter options
 
 const CountriesPage = () => {
   const { data, loading, error } = useQuery(GET_COUNTRIES);
@@ -20,7 +20,7 @@ const CountriesPage = () => {
   if (loading) return <Spinner message={"Cargando..."} />;
   if (error) return <ErrorMessage message={error.message} />;
 
-  // Filtra la lista de países según los criterios de búsqueda y filtros seleccionados
+  // Filters the list of countries based on search criteria and selected filters
   const filteredCountries = data.countries.filter((country: ICountryProps) => {
     const matchesSearch = country.name
       .toLowerCase()
@@ -32,7 +32,7 @@ const CountriesPage = () => {
     return matchesSearch && matchesContinent && matchesCurrency;
   });
 
-  // Obtiene lista única de monedas para el filtro
+  // Gets a unique list of currencies for the currency filter
   const uniqueCurrencies = Array.from(
     new Set(data.countries.map((c: ICountryProps) => c.currency))
   ).filter(Boolean) as string[];

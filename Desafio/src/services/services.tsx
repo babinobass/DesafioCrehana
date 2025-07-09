@@ -1,10 +1,10 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
-// URL de la API GraphQL desde las variables de entorno de Vite
+// GraphQL API URL from Vite environment variables
 const API_URL = import.meta.env.VITE_API_COUNTRIES;
 
 const client = new ApolloClient({
-  uri: API_URL, // URL del endpoint GraphQL
+  uri: API_URL, // GraphQL endpoint URL
   cache: new InMemoryCache(),
 });
 
