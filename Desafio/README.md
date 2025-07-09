@@ -44,7 +44,7 @@ The stack to use must be: React.js, TypeScript, and GraphQL. Using Server Side R
 
 1. **Clona el repositorio / Clone the repository**
    ```bash
-   git clone https://github.com/babinobass/DesafioCrehana/tree/main
+   git clone https://github.com/babinobass/DesafioCrehana
    cd desafio
    ```
 
