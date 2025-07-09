@@ -5,6 +5,12 @@ Este repositorio contiene la resolución de un desafío técnico frontend compue
 This repository contains the solution to a frontend technical challenge, consisting of two main exercises:
 
 ---
+## Requisitos / Requirements
+
+- **Node.js**: Versión 22.12.0 o superior / Version 22.12.0 or higher
+- **npm**: Incluido con Node.js / Included with Node.js
+
+---
 
 ## 1. **Aplicación Web / Web Application**
 
