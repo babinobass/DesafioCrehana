@@ -1,0 +1,10 @@
+overwrite: true
+schema: "https://countries.trevorblades.com"
+documents: "**/*.graphql"
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript-common"
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
